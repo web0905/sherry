@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To My Pookie, Sherry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #ffe6f0;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #ffcce0;
+      text-align: center;
+      padding: 80px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 60px;
+      color: #ff4081;
+      margin: 0;
+      animation: fadeIn 2s ease-out;
+    }
+
+    header p {
+      font-size: 20px;
+      animation: fadeIn 3s ease-out;
+    }
+
+    .hearts {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .heart {
+      position: absolute;
+      color: #ff69b4;
+      font-size: 20px;
+      animation: floatHearts 6s infinite ease-in;
+    }
+
+    @keyframes floatHearts {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-1000px) scale(1.5); opacity: 0; }
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 1s forwards;
+    }
+
+    section:nth-of-type(2) { animation-delay: 0.3s; }
+    section:nth-of-type(3) { animation-delay: 0.6s; }
+    section:nth-of-type(4) { animation-delay: 0.9s; }
+    section:nth-of-type(5) { animation-delay: 1.2s; }
+    section:nth-of-type(6) { animation-delay: 1.5s; }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .section-title {
+      font-size: 32px;
+      color: #ff4081;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .timeline-item {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .love-letter, .poem {
+      font-family: 'Dancing Script', cursive;
+      font-size: 24px;
+      line-height: 1.6;
+      background: #fff0f5;
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    .reasons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .reason {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      width: 180px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .reason:hover {
+      transform: scale(1.05);
+    }
+
+    .final {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .surprise-btn {
+      background: #ff4081;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      font-size: 18px;
+      border-radius: 25px;
+      cursor: pointer;
+      margin-top: 20px;
+      animation: pulse 2s infinite;
+      transition: transform 0.3s;
+    }
+
+    .surprise-btn:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 64, 129, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(255, 64, 129, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 64, 129, 0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 40px; }
+      header p { font-size: 18px; }
+      .section-title { font-size: 26px; }
+      .love-letter, .poem { font-size: 20px; padding: 20px; }
+      .reason { width: 140px; font-size: 14px; }
+      .surprise-btn { font-size: 16px; padding: 10px 20px; }
+    }
+
+    @media (max-width: 480px) {
+      header h1 { font-size: 30px; }
+      header p { font-size: 16px; }
+      .love-letter, .poem { font-size: 18px; }
+      .reason { width: 120px; }
+      .surprise-btn { font-size: 15px; padding: 10px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hey Pookie, Sherry...</h1>
+    <p>This one's for you, my love.</p>
+    <div class="hearts">
+      <div class="heart" style="left:10%;">♥</div>
+      <div class="heart" style="left:30%;">♥</div>
+      <div class="heart" style="left:50%;">♥</div>
+      <div class="heart" style="left:70%;">♥</div>
+      <div class="heart" style="left:90%;">♥</div>
+    </div>
+  </header>
+
+  <section>
+    <div class="section-title">Our Journey</div>
+    <div class="timeline">
+      <div class="timeline-item">16 November – when time stopped and my heart started.</div>
+      <div class="timeline-item">Your smile – my personal sunshine on cloudy days.</div>
+      <div class="timeline-item">That one laugh – still echoing in my dreams.</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">A Love Letter</div>
+    <div class="love-letter">
+      Dear Sherry,<br><br>
+      From the day I met you, everything felt softer.  
+      Your laugh became my favorite sound,  
+      Your presence, my favorite place.  
+      You make the world sweeter, warmer, and full of sparkles.  
+      This site is a tiny piece of the love I carry for you every day.<br><br>
+      Yours forever,<br>
+      Verry
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">Reasons I Love You</div>
+    <div class="reasons">
+      <div class="reason">You're my peace</div>
+      <div class="reason">You dance like nobody's watching</div>
+      <div class="reason">You're my sunshine and moonlight</div>
+      <div class="reason">You laugh at my worst jokes</div>
+      <div class="reason">You make noodles taste better</div>
+      <div class="reason">You're just... *you*, Sherry</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">A Poem for You</div>
+    <div class="poem">
+      In a world of stars, you shine the most,<br>
+      The one I brag about, the one I boast.<br>
+      With every laugh and every glance,<br>
+      You put my heart in a silly trance.<br><br>
+
+      Your voice? A song I never skip,<br>
+      Your touch? Like a warm, cozy trip.<br>
+      You're my calm in chaos, my midnight moon,<br>
+      The one I wish for, always, soon.<br><br>
+
+      You're noodles on rainy days, sweet and hot,<br>
+      You're everything the universe forgot.<br>
+      From “good morning” texts to late night memes,<br>
+      You're the queen of all my dreams.<br><br>
+
+      So here’s my heart, wrapped in code,<br>
+      On this little website I’ve bestowed.<br>
+      Forever yours, in love so true,<br>
+      My pookie bear — I love you, Sherry.<br>
+    </div>
+  </section>
+
+  <section class="final">
+    <button class="surprise-btn" onclick="alert('Forever yours, Verry! ♥')">Click here for a surprise</button>
+  </section>
+
+</body>
+</html>
